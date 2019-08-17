@@ -7,7 +7,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './material/material.module';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { HeaderComponent } from './header/header.component';
 import { ChartComponent } from './chart/chart.component';
 import { SelectComponent } from './select/select.component';
@@ -27,7 +26,6 @@ import { OptionsService } from './options.service';
 
   declarations: [ 
     AppComponent, 
-    HelloComponent, 
     HeaderComponent, 
     ChartComponent, 
     SelectComponent, SelectGridComponent ],

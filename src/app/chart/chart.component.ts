@@ -11,52 +11,38 @@ export class ChartComponent implements OnInit {
 
   chart = []; // This will hold our chart info
 
+  options = {
+      legend: {
+        display: false
+      },
+      
+      scales: {
+          xAxes: [{
+              ticks:{beginAtZero:true}
+          }]
+      }
+  };
+
   constructor(private _products: ProductsService) {}
 
   ngOnInit() {
     this._products.dailyForecast()
       .subscribe(res => {
-        let temp_max = res['list'].map(res => res.main.temp_max);
-        let temp_min = res['list'].map(res => res.main.temp_min);
-        let alldates = res['list'].map(res => res.dt)
 
-        let weatherDates = []
-        alldates.forEach((res) => {
-            let jsdate = new Date(res * 1000)
-            weatherDates.push(jsdate.toLocaleTimeString('en', { year: 'numeric', month: 'short', day: 'numeric' }))
             this.chart = new Chart('canvas', {
-              type: 'line',
-              data: {
-                labels: weatherDates,
-                datasets: [
-                  { 
-                    data: temp_max,
-                    borderColor: "#3cba9f",
-                    fill: false
-                  },
-                  { 
-                    data: temp_min,
-                    borderColor: "#ffcc00",
-                    fill: false
-                  },
-                ]
-              },
-              options: {
-                legend: {
-                  display: false
-                },
-                scales: {
-                  xAxes: [{
-                    display: true
-                  }],
-                  yAxes: [{
-                    display: true
-                  }],
-                }
-              }
+              "type":"bar",
+              "data":{
+                "labels":Object.keys(res),
+                "datasets":[{
+                  "label":"Vendas no mês","data":Object.values(res),
+                  "fill":false,
+                  "backgroundColor":["rgba(255, 99, 132, 0.2)","rgba(255, 159, 64, 0.2)","rgba(255, 205, 86, 0.2)","rgba(75, 192, 192, 0.2)","rgba(54, 162, 235, 0.2)","rgba(153, 102, 255, 0.2)","rgba(201, 203, 207, 0.2)"],
+                  "borderColor":["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(201, 203, 207)"],
+                  "borderWidth":1
+                }]
+              },"options":{"scales":{"yAxes":[{"ticks":{"beginAtZero":true}}]}}
             });
         })
-      })
   }
 
 }

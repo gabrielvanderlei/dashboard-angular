@@ -1,5 +1,21 @@
-<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutAlign.xs="center stretch" class="row-example">
-    <app-select></app-select>
-    <app-select></app-select>
-    <app-select></app-select>
+<div *ngIf="this.loaded">
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutAlign.xs="center stretch" class="row-example">
+      <app-select 
+        (changeSel)="this.changeCategory($event)" 
+        title="Category" 
+        [atual]="this.atual.category"
+        [options]="this.categoryData"></app-select>
+
+      <app-select 
+        (changeSel)="this.changeProduct($event)" 
+        title="Product" 
+        [atual]="this.atual.product"
+        [options]="this.productData"></app-select>
+
+      <app-select 
+        (changeSel)="this.changeBrand($event)" 
+        title="Brand" 
+        [atual]="this.atual.brand"
+        [options]="this.brandData"></app-select>
+  </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 export interface Food {
   value: string;
@@ -13,15 +13,33 @@ export interface Food {
 
 export class SelectComponent implements OnInit {
   
-  foods: Food[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
-  ];
+  @Input() title: String;
+  @Input() options: Object;
+  @Input() atual;
+  @Output() changeSel = new EventEmitter();
+
+  counter = 0
 
   constructor() { }
+  
+  getValue(){
+    return this.options[this.atual].value;
+  }
+
+  isAtual(){
+    if(this.counter > this.atual)
+      this.counter++;
+    else if(this.counter == this.atual)
+      return true
+    return false
+  }
+
+  callChange(e){
+    this.changeSel.emit({"value": e.value });
+  }
 
   ngOnInit() {
+    console.log(this.options)
   }
 
 }

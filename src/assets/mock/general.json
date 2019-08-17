@@ -1,18 +1,186 @@
-{
-  "categories": {
-    "category1": {
-      "product1": ["brand1", "brand2", "brand3"],
-      "product2": ["brand1", "brand2", "brand3"],
-      "product3": ["brand1", "brand2", "brand3"]
-    },
-    "category2": {
-      "product1": ["brand1", "brand2", "brand3"],
-      "product2": ["brand1"],
-      "product3": ["brand1"],
-    },
-    "category3": {
-      "product1": ["brand1"],
-      "product2": ["brand1", "brand2"],
-    }
+[
+  {
+    "viewValue": "category1",
+    "value": "category-1",
+    "data": [
+      {
+        "viewValue": "product1",
+        "value": 0,
+        "data": [
+          {
+            "viewValue": "brand1",
+            "value": "brand-1"
+          },
+          {
+            "viewValue": "brand2",
+            "value": "brand-2"
+          },
+          {
+            "viewValue": "brand3",
+            "value": "brand-3"
+          }
+        ]
+      },
+      {
+        "viewValue": "product2",
+        "value": 1,
+        "data": [
+          {
+            "viewValue": "brand1",
+            "value": "brand-1"
+          },
+          {
+            "viewValue": "brand2",
+            "value": "brand-2"
+          },
+          {
+            "viewValue": "brand3",
+            "value": "brand-3"
+          }
+        ]
+      },
+      {
+        "viewValue": "product3",
+        "value": "product-3",
+        "data": [
+          {
+            "viewValue": "brand1",
+            "value": "brand-1"
+          },
+          {
+            "viewValue": "brand2",
+            "value": "brand-2"
+          },
+          {
+            "viewValue": "brand3",
+            "value": "brand-3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewValue": "category2",
+    "value": "category-2",
+    "data": [
+      {
+        "viewValue": "product1",
+        "value": "product-1",
+        "data": [
+          {
+            "viewValue": "brand1",
+            "value": "brand-1"
+          },
+          {
+            "viewValue": "brand2",
+            "value": "brand-2"
+          },
+          {
+            "viewValue": "brand3",
+            "value": "brand-3"
+          }
+        ]
+      },
+      
+      {
+        "viewValue": "product2",
+        "value": "product-2",
+        "data": [
+          {
+            "viewValue": "brand1",
+            "value": "brand-1"
+          },
+          {
+            "viewValue": "brand2",
+            "value": "brand-2"
+          },
+          {
+            "viewValue": "brand3",
+            "value": "brand-3"
+          }
+        ]
+      },
+      
+      {
+        "viewValue": "product3",
+        "value": "product-3",
+        "data": [
+          {
+            "viewValue": "brand1",
+            "value": "brand-1"
+          },
+          {
+            "viewValue": "brand2",
+            "value": "brand-2"
+          },
+          {
+            "viewValue": "brand3",
+            "value": "brand-3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewValue": "category3",
+    "value": "category-3",
+    "data": [
+      {
+        "viewValue": "product1",
+        "value": "product-1",
+        "data": [
+          {
+            "viewValue": "brand1",
+            "value": "brand-1"
+          },
+          {
+            "viewValue": "brand2",
+            "value": "brand-2"
+          },
+          {
+            "viewValue": "brand3",
+            "value": "brand-3"
+          }
+        ]
+      },
+      
+      {
+        "viewValue": "product1",
+        "value": "product-2",
+        "data": [
+          {
+            "viewValue": "brand1",
+            "value": "brand-1"
+          },
+          {
+            "viewValue": "brand2",
+            "value": "brand-2"
+          },
+          {
+            "viewValue": "brand3",
+            "value": "brand-3"
+          }
+        ]
+      },
+      
+      {
+        "viewValue": "product1",
+        "value": "product-3",
+        "data": [
+          {
+            "viewValue": "brand1",
+            "value": "brand-1"
+          },
+          {
+            "viewValue": "brand2",
+            "value": "brand-2"
+          },
+          {
+            "viewValue": "brand3",
+            "value": "brand-3"
+          }
+        ]
+      }
+    ]
   }
-}
+]
