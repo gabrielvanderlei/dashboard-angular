@@ -4,3 +4,11 @@ body{
   padding: 0;
   margin: 0;
 }
+
+.space-3{
+  padding: 30px;
+}
+
+.full-graph{
+  padding: 50px;
+}
