@@ -19,6 +19,8 @@ export class SelectGridComponent implements OnInit {
   productData = {}
   brandData = {}
 
+  atualEndpoint = ""
+
   loaded:Boolean = false
 
   constructor(private _options: OptionsService) {}
@@ -28,7 +30,9 @@ export class SelectGridComponent implements OnInit {
       this.categoryData = res;
       this.productData = res[this.atual.category].data;
       this.brandData = res[this.atual.category].data[this.atual.product].data;
+      this.atualEndpoint = res[this.atual.category].data[this.atual.product].data[this.atual.brand].endpoint;
       this.loaded = true
+      console.log(this.atualEndpoint)
     })
   }
 

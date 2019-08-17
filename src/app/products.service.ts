@@ -7,8 +7,8 @@ export class ProductsService {
 
   constructor(private _http: HttpClient) { }
 
-  dailyForecast() {
-    return this._http.get("/assets/mock/example.json")
+  getData(endpoint) {
+    return this._http.get(endpoint)
       .map(result => result);
   }
 
