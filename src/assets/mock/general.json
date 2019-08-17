@@ -1,5 +1,18 @@
 {
   "categories": {
-    "category1": ["brnad1", "brand2", "brand3"],
+    "category1": {
+      "product1": ["brand1", "brand2", "brand3"],
+      "product2": ["brand1", "brand2", "brand3"],
+      "product3": ["brand1", "brand2", "brand3"]
+    },
+    "category2": {
+      "product1": ["brand1", "brand2", "brand3"],
+      "product2": ["brand1"],
+      "product3": ["brand1"],
+    },
+    "category3": {
+      "product1": ["brand1"],
+      "product2": ["brand1", "brand2"],
+    }
   }
 }

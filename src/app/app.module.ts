@@ -13,6 +13,7 @@ import { ChartComponent } from './chart/chart.component';
 import { SelectComponent } from './select/select.component';
 import { ProductsService } from './products.service';
 import { SelectGridComponent } from './select-grid/select-grid.component';
+import { OptionsService } from './options.service';
 
 
 @NgModule({
@@ -32,6 +33,6 @@ import { SelectGridComponent } from './select-grid/select-grid.component';
     SelectComponent, SelectGridComponent ],
     
   bootstrap:    [ AppComponent ],
-  providers: [ProductsService]
+  providers: [ProductsService, OptionsService]
 })
 export class AppModule { }
