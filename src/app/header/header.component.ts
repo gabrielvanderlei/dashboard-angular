@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadService } from "../load.service";
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  loading = 'none';
+  constructor(private load: LoadService) { }
 
   ngOnInit() {
+    this.load.currentState.subscribe(state => this.loading = state)
+  }
+
+  verifyLoadState(){
+    console.log("ok")
   }
 
 }

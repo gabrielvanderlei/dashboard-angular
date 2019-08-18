@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OptionsService } from '../options.service';
+import { LoadService } from "../load.service";
 
 @Component({
   selector: 'app-select-grid',
@@ -23,9 +24,13 @@ export class SelectGridComponent implements OnInit {
 
   loaded:Boolean = false
 
-  constructor(private _options: OptionsService) {}
+  constructor(private _options: OptionsService, private loadService: LoadService) {
+    this.loadService.loading();
+  }
 
   load(){
+    this.loadService.loading();
+
     this._options.getOptions().subscribe(res => {
       this.categoryData = res;
       this.productData = res[this.atual.category].data;
@@ -36,6 +41,8 @@ export class SelectGridComponent implements OnInit {
       if (this.atualEndpoint == undefined){
         window.alert("Dados indisponíveis")
       }
+
+      this.loadService.updated();
       
     })
   }

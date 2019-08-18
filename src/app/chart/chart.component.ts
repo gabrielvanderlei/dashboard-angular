@@ -39,8 +39,8 @@ export class ChartComponent implements OnInit {
       this._products.getData(this.endpoint)
         .subscribe(res => {
 
-              let labels = res == undefined ? [] : Object.keys(res);
-              let values = res == undefined ? [] : Object.values(res);
+              let labels = res == undefined ? [] : this.Capitalize(Object.keys(res));
+              let values = res == undefined ? [] : (Object.values(res));
               
               this.loaded = true;
               this.chart.data.labels = labels;
@@ -62,14 +62,21 @@ export class ChartComponent implements OnInit {
           "data":{
             "labels": [],
             "datasets":[{
-              "label":"Vendas no mês","data":[],
+              "label":"Sales in the month","data":[],
               "fill":false,
               "backgroundColor":["rgba(255, 99, 132, 0.2)","rgba(255, 159, 64, 0.2)","rgba(255, 205, 86, 0.2)","rgba(75, 192, 192, 0.2)","rgba(54, 162, 235, 0.2)","rgba(153, 102, 255, 0.2)","rgba(201, 203, 207, 0.2)"],
               "borderColor":["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(201, 203, 207)"],
               "borderWidth":1
             }]
-          },"options":{"scales":{"yAxes":[{"ticks":{"beginAtZero":true}}]}}
+          },"options":{"scales":{"yAxes":[{"ticks":{"beginAtZero":true}, "legend":"false"}]}}
         });
   }
 
+  Capitalize(strArray){
+    let words = []
+    for( var str in strArray){
+      words.push(strArray[str].toUpperCase())
+    }
+    return words;
+  }
 }

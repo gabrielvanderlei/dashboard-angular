@@ -1,3 +1,7 @@
 <mat-toolbar>
-  <span>My Application</span>
+  <app-header-menu-options></app-header-menu-options>
+  <span>Sales Report</span>
 </mat-toolbar>
+<mat-progress-bar 
+  (animationEnd)="this.verifyLoadState()"
+  [mode]="this.loading"></mat-progress-bar>
