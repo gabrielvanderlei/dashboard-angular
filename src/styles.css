@@ -12,3 +12,12 @@ body{
 .full-graph{
   padding: 50px;
 }
+
+.fill-remaining-space{
+  flex: 1 1 auto;
+}
+
+mat-toolbar.mat-toolbar.mat-toolbar-single-row {
+    background: rgb(32, 47, 181);
+    color: white;
+}
