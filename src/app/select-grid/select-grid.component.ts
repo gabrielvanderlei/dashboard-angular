@@ -32,7 +32,11 @@ export class SelectGridComponent implements OnInit {
       this.brandData = res[this.atual.category].data[this.atual.product].data;
       this.atualEndpoint = res[this.atual.category].data[this.atual.product].data[this.atual.brand].endpoint;
       this.loaded = true
-      console.log(this.atualEndpoint)
+
+      if (this.atualEndpoint == undefined){
+        window.alert("Dados indisponíveis")
+      }
+      
     })
   }
 

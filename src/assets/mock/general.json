@@ -19,7 +19,8 @@
           },
           {
             "viewValue": "brand3",
-            "value": "brand-3"
+            "value": "brand-3",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category1/Product1/Brand3/2019.json"
           }
         ]
       },
@@ -29,15 +30,18 @@
         "data": [
           {
             "viewValue": "brand1",
-            "value": "brand-1"
+            "value": "brand-1",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category1/Product2/Brand1/2019.json"
           },
           {
             "viewValue": "brand2",
-            "value": "brand-2"
+            "value": "brand-2",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category1/Product2/Brand2/2019.json"
           },
           {
             "viewValue": "brand3",
-            "value": "brand-3"
+            "value": "brand-3",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category1/Product2/Brand3/2019.json"
           }
         ]
       },
@@ -47,15 +51,8 @@
         "data": [
           {
             "viewValue": "brand1",
-            "value": "brand-1"
-          },
-          {
-            "viewValue": "brand2",
-            "value": "brand-2"
-          },
-          {
-            "viewValue": "brand3",
-            "value": "brand-3"
+            "value": "brand-1",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category1/Product3/Brand1/2019.json"
           }
         ]
       }
@@ -71,15 +68,18 @@
         "data": [
           {
             "viewValue": "brand1",
-            "value": "brand-1"
+            "value": "brand-1",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category2/Product1/Brand1/2019.json"
           },
           {
             "viewValue": "brand2",
-            "value": "brand-2"
+            "value": "brand-2",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category2/Product1/Brand2/2019.json"
           },
           {
             "viewValue": "brand3",
-            "value": "brand-3"
+            "value": "brand-3",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category2/Product1/Brand3/2019.json"
           }
         ]
       },
@@ -90,15 +90,8 @@
         "data": [
           {
             "viewValue": "brand1",
-            "value": "brand-1"
-          },
-          {
-            "viewValue": "brand2",
-            "value": "brand-2"
-          },
-          {
-            "viewValue": "brand3",
-            "value": "brand-3"
+            "value": "brand-1",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category2/Product2/Brand1/2019.json"
           }
         ]
       },
@@ -109,15 +102,8 @@
         "data": [
           {
             "viewValue": "brand1",
-            "value": "brand-1"
-          },
-          {
-            "viewValue": "brand2",
-            "value": "brand-2"
-          },
-          {
-            "viewValue": "brand3",
-            "value": "brand-3"
+            "value": "brand-1",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category2/Product3/Brand1/2019.json"
           }
         ]
       }
@@ -133,53 +119,25 @@
         "data": [
           {
             "viewValue": "brand1",
-            "value": "brand-1"
-          },
-          {
-            "viewValue": "brand2",
-            "value": "brand-2"
-          },
-          {
-            "viewValue": "brand3",
-            "value": "brand-3"
+            "value": "brand-1",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category3/Product1/Brand1/2019.json"
           }
         ]
       },
       
       {
-        "viewValue": "product1",
+        "viewValue": "product2",
         "value": "product-2",
         "data": [
           {
             "viewValue": "brand1",
-            "value": "brand-1"
+            "value": "brand-1",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category3/Product2/Brand1/2019.json"
           },
           {
             "viewValue": "brand2",
-            "value": "brand-2"
-          },
-          {
-            "viewValue": "brand3",
-            "value": "brand-3"
-          }
-        ]
-      },
-      
-      {
-        "viewValue": "product1",
-        "value": "product-3",
-        "data": [
-          {
-            "viewValue": "brand1",
-            "value": "brand-1"
-          },
-          {
-            "viewValue": "brand2",
-            "value": "brand-2"
-          },
-          {
-            "viewValue": "brand3",
-            "value": "brand-3"
+            "value": "brand-2",
+            "endpoint": "https://dashboard-angular-gv.stackblitz.io/assets/mock/Category3/Product2/Brand2/2019.json"
           }
         ]
       }
